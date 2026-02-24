@@ -1,0 +1,260 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Montserrat";
+    height: 100%;
+}
+
+#root {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 3rem;
+    background-color: #5e346d;
+    display: flex;
+    justify-content: unset;
+    align-items: center;
+}
+
+.navbar .title {
+    color: white;
+    font-size: 120%;
+    margin-right: 3rem;
+    margin-left: 1rem;
+    align-content: center;
+}
+
+.navbar a {
+    color: white;
+    align-content: center;
+    height: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.navbar a.actual {
+    background-color: #86489c;
+}
+
+.appLayout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.dropzone {
+    border: 2px dashed grey;
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.merge-root {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex: 1;
+    min-height: 0;
+}
+
+.merge-files-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1rem;
+    gap: 2rem;
+}
+
+.merge-file-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+}
+
+.merge-action {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.merge-btn {
+    font-size: 18px;
+    background-color: #c6c6ff;
+    border-radius: 5px;
+    border-width: 1px;
+    padding: 4px 16px;
+    cursor: pointer;
+}
+
+.results-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex: 1;
+    min-height: 0;
+}
+
+.missing-lists {
+    display: flex;
+    gap: 2rem;
+    flex: 1;
+    overflow: hidden;
+}
+
+.missing-list-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.missing-list-scroll {
+    overflow-y: auto;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.missing-item {
+    font-size: 120%;
+    padding: 3px;
+}
+
+.sum-badge {
+    color: #888;
+    font-size: 80%;
+}
+
+.copy-toast {
+    position: fixed;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #5e346d;
+    color: white;
+    padding: 0.5rem 1.2rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    pointer-events: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.ppc-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+
+.ppc-card {
+    border: 1px solid #d0a8e0;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    background: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.ppc-card-id {
+    font-weight: 700;
+    color: #5e346d;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.ppc-card-id:hover {
+    text-decoration: underline;
+}
+
+.ppc-card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.ppc-card-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+}
+
+.ppc-card-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+
+.ppc-card-total {
+    margin-left: auto;
+    border-left: 2px solid #d0a8e0;
+    padding-left: 1.5rem;
+}
+
+.ppc-maintenance {
+    color: #2a6099;
+}
+
+.ppc-index {
+    color: #2a7a4f;
+}
+
+.ppc-rest {
+    color: #888;
+}
+
+.ppc-card-total {
+    color: #5e346d;
+    font-weight: 700;
+}
+
+.ppc-math {
+    font-family: monospace;
+    font-size: 0.85rem;
+    color: inherit;
+}
+
+.col-input {
+    width: 3rem;
+    text-align: center;
+    font-family: monospace;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 2px solid #86489c;
+    border-radius: 6px;
+    padding: 2px 4px;
+    color: #5e346d;
+    background-color: #f9f3fb;
+    outline: none;
+}
+
+.col-input:focus {
+    border-color: #5e346d;
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(134, 72, 156, 0.2);
+}
