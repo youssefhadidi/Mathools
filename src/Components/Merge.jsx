@@ -119,9 +119,9 @@ function Merge() {
       <div className="results-section">
         <div>
           {diffs.map((id) => (
-            <p key={id}>
-              {id} attendue : {diffMap[id].current}, lue : {diffMap[id].new}
-            </p>
+            <div key={id} style={{ padding: '2px 0' }}>
+              <span onClick={() => copyId(id)} style={{ cursor: 'pointer', fontWeight: 600 }}>{id}</span> attendue : {diffMap[id].current}, lue : {diffMap[id].new}
+            </div>
           ))}
           {diffMap && diffs.length === 0 && <p>Aucune differences</p>}
         </div>
